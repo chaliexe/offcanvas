@@ -1,0 +1,29 @@
+<table >
+
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+      </ng-container>
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+      </ng-container>
+      <ng-container matColumnDef="lastname">
+        <th mat-header-cell *matHeaderCellDef> Last Name </th>
+        <td mat-cell *matCellDef="let row"> {{row.lastName}} </td>
+      </ng-container>
+      <ng-container matColumnDef="pet">
+        <th mat-header-cell *matHeaderCellDef> Pet </th>
+        <td mat-cell *matCellDef="let row"> {{row.pet}} </td>
+      </ng-container>
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef> Date </th>
+        <td mat-cell *matCellDef="let row"> {{row.date}} </td>
+      </ng-container>
+      <ng-container matColumnDef="reason">
+        <th mat-header-cell *matHeaderCellDef> Reason for consultation </th>
+        <td mat-cell *matCellDef="let row"> {{row.reason}} </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="tableDisplayColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: tableDisplayColumns;"></tr>
+</table>
