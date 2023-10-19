@@ -27,7 +27,7 @@
 		margin: auto;
 	}
 	.container .btn-menu, .logo{
-		float: left;
+		float: right;
 		line-height:100px;
 	}
 	.container .btn-menu label{
@@ -86,8 +86,9 @@
 		background: #1c1c1c;
 		height: 200vh;
 		position: relative;
+		float: right;
 		transition: all 500ms ease;
-		transform: translateX(-100%);
+		transform: translateX(100%);
 	}
 	#btn-menu:checked ~ .container-menu .cont-menu{
 		transform: translateX(0%);
