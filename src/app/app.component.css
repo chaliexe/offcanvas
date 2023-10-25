@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
 	*{
 		margin: 0;
 		padding: 0;
@@ -10,7 +10,7 @@
 		position: fixed;
 		width: 100%;
 		height: 100vh;
-		background: rgba(0,0,0,0.6);
+		background: #153230;
 		z-index: -1;
 		top: 0;left: 0;
 	}
@@ -68,7 +68,7 @@
 	}
 	.container-menu{
 		position: absolute;
-		background: rgba(0,0,0,0.5);
+		background: #153230;
 		width: 100%;
 		height: 500vh;
 		top: 0;left: 0;
@@ -83,7 +83,7 @@
 	.cont-menu{
 		width: 100%;
 		max-width: 550px;
-		background: #1c1c1c;
+		background: #153230;
 		height: 200vh;
 		position: relative;
 		float: right;
@@ -106,7 +106,7 @@
 	}
 	.cont-menu nav a:hover{
 		border-left: 5px solid #c7c7c7;
-		background: #1f1f1f;
+		background: #153230;
 	}
 	.cont-menu label{
 		position: absolute;
@@ -163,7 +163,7 @@ input[type=text], select, textarea {
   .container {
     margin-top: 10px;
     border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 30px;
+    background-color: #153230;
+  
     
   }
