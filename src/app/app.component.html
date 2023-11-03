@@ -48,8 +48,21 @@
     
         <label for="subject"></label>
         <textarea id="subject" name="subject" placeholder="Motivo por la consulta?" style="height:200px"></textarea>
-    
+       
+       
+        <mat-form-field class="example-full-width">
+          <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker" placeholder="Choose a date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        
+      
+          <select>
+            <option *ngFor="let time of timeOptions" [value]="time">{{ time }}</option>
+          </select>
+       
         <input type="submit" value="Submit">
+     
     
       </form>
     </div>
